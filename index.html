@@ -1,0 +1,702 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://dev-logic.pantheonsite.io/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<script>var et_site_url='https://dev-logic.pantheonsite.io';var et_post_id='22';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><title>K&amp;R |</title>
+<meta name='robots' content='noindex, nofollow' />
+<link rel='dns-prefetch' href='//dev-logic.pantheonsite.io' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="K&amp;R &raquo; Feed" href="https://dev-logic.pantheonsite.io/feed/" />
+<link rel="alternate" type="application/rss+xml" title="K&amp;R &raquo; Comments Feed" href="https://dev-logic.pantheonsite.io/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/dev-logic.pantheonsite.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<meta content="Divi v.4.0.5" name="generator"/><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://dev-logic.pantheonsite.io/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css'  href='https://dev-logic.pantheonsite.io/wp-content/themes/Divi/style.css?ver=4.0.5' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://dev-logic.pantheonsite.io/wp-includes/css/dashicons.min.css?ver=5.8.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://dev-logic.pantheonsite.io/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://dev-logic.pantheonsite.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script>
+				document.addEventListener( "DOMContentLoaded", function( event ) {
+					window.et_location_hash = window.location.hash;
+					if ( "" !== window.et_location_hash ) {
+						// Prevent jump to anchor - Firefox
+						window.scrollTo( 0, 0 );
+						var et_anchor_element = document.getElementById( window.et_location_hash.substring( 1 ) );
+						if( et_anchor_element === null ) {
+						    return;
+						}
+						// bypass auto scrolling, if supported
+						if ("scrollRestoration" in history) {
+							history.scrollRestoration = "manual";
+						} else {
+							// Prevent jump to anchor - Other Browsers
+							window.et_location_hash_style = et_anchor_element.style.display;
+							et_anchor_element.style.display = "none";
+						}
+					}
+				} );
+		</script><link rel="https://api.w.org/" href="https://dev-logic.pantheonsite.io/wp-json/" /><link rel="alternate" type="application/json" href="https://dev-logic.pantheonsite.io/wp-json/wp/v2/pages/22" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dev-logic.pantheonsite.io/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://dev-logic.pantheonsite.io/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.1" />
+<link rel="canonical" href="https://dev-logic.pantheonsite.io/" />
+<link rel='shortlink' href='https://dev-logic.pantheonsite.io/' />
+<link rel="alternate" type="application/json+oembed" href="https://dev-logic.pantheonsite.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev-logic.pantheonsite.io%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://dev-logic.pantheonsite.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdev-logic.pantheonsite.io%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link rel="shortcut icon" href="" /><link rel="stylesheet" id="et-core-unified-22-cached-inline-styles" href="https://dev-logic.pantheonsite.io/wp-content/cache/et/22/et-core-unified-22-16439712549946.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" /></head>
+<body class="home page-template-default page page-id-22 et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_no_sidebar et_divi_theme et-db et_minified_js et_minified_css">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://dev-logic.pantheonsite.io/">
+						<img src="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/logo1.png" alt="K&amp;R" id="logo" data-height-percentage="54" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-22 current_page_item menu-item-124"><a href="https://dev-logic.pantheonsite.io/" aria-current="page">HOME</a></li>
+<li id="menu-item-119" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119"><a href="http://my-service">SERVICES</a></li>
+<li id="menu-item-120" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-120"><a href="http://protfolio">AOBUT ME</a></li>
+<li id="menu-item-121" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121"><a href="http://Testimonial">TESTIMONIAL</a></li>
+<li id="menu-item-122" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-122"><a href="http://contact-us">CONTACT US</a></li>
+</ul>						</nav>
+					
+					
+					
+										<div id="et_top_search">
+						<span id="et_search_icon"></span>
+					</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+			<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://dev-logic.pantheonsite.io/">
+					<input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+		</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+
+
+			
+				<article id="post-22" class="post-22 page type-page status-publish hentry">
+
+				
+					<div class="entry-content">
+					<div id="et-boc" class="et-boc">
+			
+		<div class="et-l et-l--post">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div class="et_pb_section et_pb_section_0 et_section_regular">
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_0">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0 et_pb_bg_layout_light  et_pb_text_align_left">
+				
+				
+				<div class="et_pb_text_inner"><h2><strong>I’m Kawser Ahmed</strong></h2>
+<h3><strong>I’m a WordPress developer based in Bangladesh</strong></h3>
+<p>&nbsp;</p>
+<p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services, and online stores.</p>
+<p>My passion is to design digital user experiences through bold interface and meaningful interactions.</p></div>
+			</div> <!-- .et_pb_text --><div class="et_pb_button_module_wrapper et_pb_button_0_wrapper  et_pb_module ">
+				<a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="">CONTACT US</a>
+			</div>
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_2 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_0">
+				
+				
+				<span class="et_pb_image_wrap "><img src="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/09/kawser_ahmed-1557x2048-1.png" alt="" title="" srcset="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/09/kawser_ahmed-1557x2048-1.png 1557w, https://dev-logic.pantheonsite.io/wp-content/uploads/2020/09/kawser_ahmed-1557x2048-1-1280x1684.png 1280w, https://dev-logic.pantheonsite.io/wp-content/uploads/2020/09/kawser_ahmed-1557x2048-1-980x1289.png 980w, https://dev-logic.pantheonsite.io/wp-content/uploads/2020/09/kawser_ahmed-1557x2048-1-480x631.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1557px, 100vw" /></span>
+			</div>
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_number_counter et_pb_number_counter_0 et_pb_bg_layout_light  et_pb_text_align_center et_pb_with_title" data-number-value="300" data-number-separator="">
+				
+				
+				<div class="percent"  data-et-multi-view="{&quot;schema&quot;:{&quot;classes&quot;:{&quot;desktop&quot;:{&quot;add&quot;:[&quot;et_pb_with_title&quot;]},&quot;tablet&quot;:{&quot;remove&quot;:[&quot;et_pb_with_title&quot;]},&quot;hover&quot;:{&quot;remove&quot;:[&quot;et_pb_with_title&quot;]}}},&quot;slug&quot;:&quot;et_pb_number_counter&quot;}"><p><span class="percent-value"></span><span class="percent-sign">%</span></p></div>
+				<h3 class="title">Your Title Goes Here</h3>
+			</div><!-- .et_pb_number_counter -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_number_counter et_pb_number_counter_1 et_pb_bg_layout_light  et_pb_text_align_center et_pb_with_title" data-number-value="800" data-number-separator="">
+				
+				
+				<div class="percent"  data-et-multi-view="{&quot;schema&quot;:{&quot;classes&quot;:{&quot;desktop&quot;:{&quot;add&quot;:[&quot;et_pb_with_title&quot;]},&quot;tablet&quot;:{&quot;remove&quot;:[&quot;et_pb_with_title&quot;]},&quot;hover&quot;:{&quot;remove&quot;:[&quot;et_pb_with_title&quot;]}}},&quot;slug&quot;:&quot;et_pb_number_counter&quot;}"><p><span class="percent-value"></span><span class="percent-sign">%</span></p></div>
+				<h3 class="title">Your Title Goes Here</h3>
+			</div><!-- .et_pb_number_counter -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_number_counter et_pb_number_counter_2 et_pb_bg_layout_light  et_pb_text_align_center et_pb_with_title" data-number-value="400" data-number-separator="">
+				
+				
+				<div class="percent"  data-et-multi-view="{&quot;schema&quot;:{&quot;classes&quot;:{&quot;desktop&quot;:{&quot;add&quot;:[&quot;et_pb_with_title&quot;]},&quot;tablet&quot;:{&quot;remove&quot;:[&quot;et_pb_with_title&quot;]},&quot;hover&quot;:{&quot;remove&quot;:[&quot;et_pb_with_title&quot;]}}},&quot;slug&quot;:&quot;et_pb_number_counter&quot;}"><p><span class="percent-value"></span><span class="percent-sign">%</span></p></div>
+				<h3 class="title">Your Title Goes Here</h3>
+			</div><!-- .et_pb_number_counter -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_number_counter et_pb_number_counter_3 et_pb_bg_layout_light  et_pb_text_align_center et_pb_with_title" data-number-value="700" data-number-separator="">
+				
+				
+				<div class="percent"  data-et-multi-view="{&quot;schema&quot;:{&quot;classes&quot;:{&quot;desktop&quot;:{&quot;add&quot;:[&quot;et_pb_with_title&quot;]},&quot;tablet&quot;:{&quot;remove&quot;:[&quot;et_pb_with_title&quot;]},&quot;hover&quot;:{&quot;remove&quot;:[&quot;et_pb_with_title&quot;]}}},&quot;slug&quot;:&quot;et_pb_number_counter&quot;}"><p><span class="percent-value"></span><span class="percent-sign">%</span></p></div>
+				<h3 class="title">Your Title Goes Here</h3>
+			</div><!-- .et_pb_number_counter -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_1 et_pb_with_background et_section_regular">
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_2">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1 my-service et_pb_bg_layout_light  et_pb_text_align_left">
+				
+				
+				<div class="et_pb_text_inner"><h1 style="text-align: center;"><strong>My Services</strong></h1>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br /> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br /> exercitation ullamco laboris nisi</p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_3">
+				<div class="et_pb_column et_pb_column_1_3 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_0 et_pb_bg_layout_light  et_pb_text_align_left  et_pb_blurb_position_top">
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et-pb-icon et-pb-icon-circle et-pb-icon-circle-border">&#xe024;</span></span></div>
+					<div class="et_pb_blurb_container">
+						<h2 class="et_pb_module_header"><span>DEVELOPMENT</span></h2>
+						<div class="et_pb_blurb_description"><p style="text-align: left;"><span>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</span></p></div>
+					</div>
+				</div> <!-- .et_pb_blurb_content -->
+			</div> <!-- .et_pb_blurb -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_1 et_pb_bg_layout_light  et_pb_text_align_left  et_pb_blurb_position_top">
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et-pb-icon et-pb-icon-circle et-pb-icon-circle-border">&#xe07e;</span></span></div>
+					<div class="et_pb_blurb_container">
+						<h2 class="et_pb_module_header"><span>GRAPICH DESIGN</span></h2>
+						<div class="et_pb_blurb_description"><p style="text-align: left;"><span>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</span></p></div>
+					</div>
+				</div> <!-- .et_pb_blurb_content -->
+			</div> <!-- .et_pb_blurb -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_2 et_pb_bg_layout_light  et_pb_text_align_left  et_pb_blurb_position_top">
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et-pb-icon et-pb-icon-circle et-pb-icon-circle-border">&#xe037;</span></span></div>
+					<div class="et_pb_blurb_container">
+						<h2 class="et_pb_module_header"><span>APP DEVELOPMENT</span></h2>
+						<div class="et_pb_blurb_description"><p style="text-align: left;"><span>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</span></p></div>
+					</div>
+				</div> <!-- .et_pb_blurb_content -->
+			</div> <!-- .et_pb_blurb -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_4">
+				<div class="et_pb_column et_pb_column_1_3 et_pb_column_10  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_3 et_pb_bg_layout_light  et_pb_text_align_left  et_pb_blurb_position_top">
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et-pb-icon et-pb-icon-circle et-pb-icon-circle-border">&#xe00f;</span></span></div>
+					<div class="et_pb_blurb_container">
+						<h2 class="et_pb_module_header"><span>PHOTOGRPICH</span></h2>
+						<div class="et_pb_blurb_description"><p style="text-align: center;"><span>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</span></p></div>
+					</div>
+				</div> <!-- .et_pb_blurb_content -->
+			</div> <!-- .et_pb_blurb -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_11  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_4 et_pb_bg_layout_light  et_pb_text_align_left  et_pb_blurb_position_top">
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et-pb-icon et-pb-icon-circle et-pb-icon-circle-border">&#xe001;</span></span></div>
+					<div class="et_pb_blurb_container">
+						<h2 class="et_pb_module_header"><span>GRAPICH DESIGN</span></h2>
+						<div class="et_pb_blurb_description"><p style="text-align: left;"><span>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</span></p></div>
+					</div>
+				</div> <!-- .et_pb_blurb_content -->
+			</div> <!-- .et_pb_blurb -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_12  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_5 et_pb_bg_layout_light  et_pb_text_align_left  et_pb_blurb_position_top">
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et-pb-icon et-pb-icon-circle et-pb-icon-circle-border">&#xe038;</span></span></div>
+					<div class="et_pb_blurb_container">
+						<h2 class="et_pb_module_header"><span>APP DEVELOPMENT</span></h2>
+						<div class="et_pb_blurb_description"><p style="text-align: left;"><span>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</span></p></div>
+					</div>
+				</div> <!-- .et_pb_blurb_content -->
+			</div> <!-- .et_pb_blurb -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_2 et_section_regular">
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_5 et_animated">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_13  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_2 et_pb_bg_layout_light  et_pb_text_align_left">
+				
+				
+				<div class="et_pb_text_inner"><h2>Make beauty Things With Passion.</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+			</div> <!-- .et_pb_text --><div class="et_pb_button_module_wrapper et_pb_button_1_wrapper  et_pb_module ">
+				<a class="et_pb_button et_pb_button_1 et_pb_bg_layout_light" href="">Read More</a>
+			</div>
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_2 et_pb_column_14  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<ul class="et_pb_module et_pb_counters et_pb_counters_0 et_animated et-waypoint et_pb_bg_layout_light">
+				<li class="et_pb_counter_0">
+				<span class="et_pb_counter_title">HTML</span>
+				<span class="et_pb_counter_container">
+					
+					
+					<span class="et_pb_counter_amount" style="" data-width="92%"><span class="et_pb_counter_amount_number"><span class="et_pb_counter_amount_number_inner">92%</span></span></span>
+					<span class="et_pb_counter_amount overlay" style="" data-width="92%"><span class="et_pb_counter_amount_number"><span class="et_pb_counter_amount_number_inner">92%</span></span></span>
+				</span>
+			</li><li class="et_pb_counter_1">
+				<span class="et_pb_counter_title">CSS</span>
+				<span class="et_pb_counter_container">
+					
+					
+					<span class="et_pb_counter_amount" style="" data-width="86%"><span class="et_pb_counter_amount_number"><span class="et_pb_counter_amount_number_inner">86%</span></span></span>
+					<span class="et_pb_counter_amount overlay" style="" data-width="86%"><span class="et_pb_counter_amount_number"><span class="et_pb_counter_amount_number_inner">86%</span></span></span>
+				</span>
+			</li><li class="et_pb_counter_2">
+				<span class="et_pb_counter_title">JAVASCRIPT</span>
+				<span class="et_pb_counter_container">
+					
+					
+					<span class="et_pb_counter_amount" style="" data-width="89%"><span class="et_pb_counter_amount_number"><span class="et_pb_counter_amount_number_inner">89%</span></span></span>
+					<span class="et_pb_counter_amount overlay" style="" data-width="89%"><span class="et_pb_counter_amount_number"><span class="et_pb_counter_amount_number_inner">89%</span></span></span>
+				</span>
+			</li><li class="et_pb_counter_3">
+				<span class="et_pb_counter_title">PHP</span>
+				<span class="et_pb_counter_container">
+					
+					
+					<span class="et_pb_counter_amount" style="" data-width="94%"><span class="et_pb_counter_amount_number"><span class="et_pb_counter_amount_number_inner">94%</span></span></span>
+					<span class="et_pb_counter_amount overlay" style="" data-width="94%"><span class="et_pb_counter_amount_number"><span class="et_pb_counter_amount_number_inner">94%</span></span></span>
+				</span>
+			</li>
+			</ul> <!-- .et_pb_counters -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular">
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_6">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_15  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div id="protfolio" class="et_pb_module et_pb_text et_pb_text_3 et_pb_bg_layout_light  et_pb_text_align_left">
+				
+				
+				<div class="et_pb_text_inner"><h1 style="text-align: center;"><strong>Our Portfolio</strong></h1>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_7">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_filterable_portfolio et_pb_filterable_portfolio_0 et_pb_portfolio et_pb_bg_layout_light  et_pb_filterable_portfolio_grid clearfix" data-posts-number="10">
+				
+				
+				<div class="et_pb_portfolio_filters clearfix"><ul class="clearfix"><li class="et_pb_portfolio_filter et_pb_portfolio_filter_all"><a href="#" class="active" data-category-slug="all">All</a></li><li class="et_pb_portfolio_filter"><a href="#" data-category-slug="book-cover-design">Book Cover Design</a></li><li class="et_pb_portfolio_filter"><a href="#" data-category-slug="email-template-design">Email Template Design</a></li><li class="et_pb_portfolio_filter"><a href="#" data-category-slug="ui-design">Ui Design</a></li><li class="et_pb_portfolio_filter"><a href="#" data-category-slug="web-site-creation">Web Site Creation</a></li></ul></div><!-- .et_pb_portfolio_filters -->
+
+				<div class="et_pb_portfolio_items_wrapper clearfix">
+					<div class="et_pb_portfolio_items">				<div id="post-94" class="et_pb_portfolio_item et_pb_grid_item project_category_book-cover-design post-94 project type-project status-publish has-post-thumbnail hentry project_category-book-cover-design">
+										<a href="https://dev-logic.pantheonsite.io/project/book-cover-design-for-coronyco/">
+							<span class="et_portfolio_image">
+								<img src="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-2.jpg" alt="Book Cover Design for Coronyco" class="" srcset="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-2.jpg 479w, https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-2.jpg 480w " sizes="(max-width:479px) 479w, 100vw "  width='400' height='284' />						<span class="et_overlay"></span>													</span>
+						</a>
+				<h2 class="et_pb_module_header"><a href="https://dev-logic.pantheonsite.io/project/book-cover-design-for-coronyco/">Book Cover Design for Coronyco</a></h2><p class="post-meta"><a href="https://dev-logic.pantheonsite.io/project_category/book-cover-design/" rel="tag">Book Cover Design</a></p>				</div><!-- .et_pb_portfolio_item -->
+								<div id="post-91" class="et_pb_portfolio_item et_pb_grid_item project_category_ui-design post-91 project type-project status-publish has-post-thumbnail hentry project_category-ui-design">
+										<a href="https://dev-logic.pantheonsite.io/project/ui-design-for-coronyco/">
+							<span class="et_portfolio_image">
+								<img src="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-9-1-150x150-1.jpg" alt="Ui Design for Coronyco" class="" srcset="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-9-1-150x150-1.jpg 479w, https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-9-1-150x150-1.jpg 480w " sizes="(max-width:479px) 479w, 100vw "  width='400' height='284' />						<span class="et_overlay"></span>													</span>
+						</a>
+				<h2 class="et_pb_module_header"><a href="https://dev-logic.pantheonsite.io/project/ui-design-for-coronyco/">Ui Design for Coronyco</a></h2><p class="post-meta"><a href="https://dev-logic.pantheonsite.io/project_category/ui-design/" rel="tag">Ui Design</a></p>				</div><!-- .et_pb_portfolio_item -->
+								<div id="post-89" class="et_pb_portfolio_item et_pb_grid_item project_category_email-template-design post-89 project type-project status-publish has-post-thumbnail hentry project_category-email-template-design">
+										<a href="https://dev-logic.pantheonsite.io/project/email-template-design-for-anaconda/">
+							<span class="et_portfolio_image">
+								<img src="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-10.jpg" alt="Email template Design for Anaconda" class="" srcset="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-10.jpg 479w, https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-10.jpg 480w " sizes="(max-width:479px) 479w, 100vw "  width='400' height='284' />						<span class="et_overlay"></span>													</span>
+						</a>
+				<h2 class="et_pb_module_header"><a href="https://dev-logic.pantheonsite.io/project/email-template-design-for-anaconda/">Email template Design for Anaconda</a></h2><p class="post-meta"><a href="https://dev-logic.pantheonsite.io/project_category/email-template-design/" rel="tag">Email Template Design</a></p>				</div><!-- .et_pb_portfolio_item -->
+								<div id="post-86" class="et_pb_portfolio_item et_pb_grid_item project_category_email-template-design post-86 project type-project status-publish has-post-thumbnail hentry project_category-email-template-design">
+										<a href="https://dev-logic.pantheonsite.io/project/email-template-design-for-zendo/">
+							<span class="et_portfolio_image">
+								<img src="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-2-150x150-1.jpg" alt="Email Template Design for Zendo" class="" srcset="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-2-150x150-1.jpg 479w, https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-2-150x150-1.jpg 480w " sizes="(max-width:479px) 479w, 100vw "  width='400' height='284' />						<span class="et_overlay"></span>													</span>
+						</a>
+				<h2 class="et_pb_module_header"><a href="https://dev-logic.pantheonsite.io/project/email-template-design-for-zendo/">Email Template Design for Zendo</a></h2><p class="post-meta"><a href="https://dev-logic.pantheonsite.io/project_category/email-template-design/" rel="tag">Email Template Design</a></p>				</div><!-- .et_pb_portfolio_item -->
+								<div id="post-84" class="et_pb_portfolio_item et_pb_grid_item project_category_web-site-creation post-84 project type-project status-publish has-post-thumbnail hentry project_category-web-site-creation">
+										<a href="https://dev-logic.pantheonsite.io/project/web-site-for-zupeq/">
+							<span class="et_portfolio_image">
+								<img src="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-150x150-1.jpg" alt="Web Site For Zupeq" class="" srcset="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-150x150-1.jpg 479w, https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-150x150-1.jpg 480w " sizes="(max-width:479px) 479w, 100vw "  width='400' height='284' />						<span class="et_overlay"></span>													</span>
+						</a>
+				<h2 class="et_pb_module_header"><a href="https://dev-logic.pantheonsite.io/project/web-site-for-zupeq/">Web Site For Zupeq</a></h2><p class="post-meta"><a href="https://dev-logic.pantheonsite.io/project_category/web-site-creation/" rel="tag">Web Site Creation</a></p>				</div><!-- .et_pb_portfolio_item -->
+								<div id="post-81" class="et_pb_portfolio_item et_pb_grid_item project_category_web-site-creation post-81 project type-project status-publish has-post-thumbnail hentry project_category-web-site-creation">
+										<a href="https://dev-logic.pantheonsite.io/project/web-site-creation/">
+							<span class="et_portfolio_image">
+								<img src="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-1-1-150x150-1.jpg" alt="Web Site Creation" class="" srcset="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-1-1-150x150-1.jpg 479w, https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-1-1-150x150-1.jpg 480w " sizes="(max-width:479px) 479w, 100vw "  width='400' height='284' />						<span class="et_overlay"></span>													</span>
+						</a>
+				<h2 class="et_pb_module_header"><a href="https://dev-logic.pantheonsite.io/project/web-site-creation/">Web Site Creation</a></h2><p class="post-meta"><a href="https://dev-logic.pantheonsite.io/project_category/web-site-creation/" rel="tag">Web Site Creation</a></p>				</div><!-- .et_pb_portfolio_item -->
+				</div><!-- .et_pb_portfolio_items -->
+				</div>
+				<div class="et_pb_portofolio_pagination"></div>
+			</div> <!-- .et_pb_filterable_portfolio -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_4 et_section_regular">
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_8">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div id="Testimonial" class="et_pb_module et_pb_text et_pb_text_4 et_pb_bg_layout_light  et_pb_text_align_left">
+				
+				
+				<div class="et_pb_text_inner"><h2 style="text-align: center;"><strong>What People Say About me?.</strong></h2>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_9">
+				<div class="et_pb_column et_pb_column_1_3 et_pb_column_18  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_6 et_pb_bg_layout_light  et_pb_text_align_left  et_pb_blurb_position_top">
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><img src="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/11/RABBI-BANK.jpg" alt="" srcset="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/11/RABBI-BANK.jpg 300w, https://dev-logic.pantheonsite.io/wp-content/uploads/2020/11/RABBI-BANK-150x150.jpg 150w" sizes="(max-width: 300px) 100vw, 300px" class="et-waypoint et_pb_animation_top" /></span></div>
+					<div class="et_pb_blurb_container">
+						<h2 class="et_pb_module_header"><span>MD. Didarul Haque</span></h2>
+						<div class="et_pb_blurb_description"><p style="text-align: center;">Graphics Designer</p>
+<p style="text-align: center;">Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p></div>
+					</div>
+				</div> <!-- .et_pb_blurb_content -->
+			</div> <!-- .et_pb_blurb -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_19  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_7 et_pb_bg_layout_light  et_pb_text_align_left  et_pb_blurb_position_top">
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><img src="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-1.jpg" alt="" srcset="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-1.jpg 224w, https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-1-150x150.jpg 150w" sizes="(max-width: 224px) 100vw, 224px" class="et-waypoint et_pb_animation_top" /></span></div>
+					<div class="et_pb_blurb_container">
+						<h2 class="et_pb_module_header"><span>Jhon Doe</span></h2>
+						<div class="et_pb_blurb_description"><p style="text-align: center;">C.E.O Xander Express</p>
+<p style="text-align: center;">Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p></div>
+					</div>
+				</div> <!-- .et_pb_blurb_content -->
+			</div> <!-- .et_pb_blurb -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_20  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_8 et_pb_bg_layout_light  et_pb_text_align_left  et_pb_blurb_position_top">
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><img src="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download.jpg" alt="" srcset="https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download.jpg 225w, https://dev-logic.pantheonsite.io/wp-content/uploads/2020/10/download-150x150.jpg 150w" sizes="(max-width: 225px) 100vw, 225px" class="et-waypoint et_pb_animation_top" /></span></div>
+					<div class="et_pb_blurb_container">
+						<h2 class="et_pb_module_header"><span>Alex Ender</span></h2>
+						<div class="et_pb_blurb_description"><p style="text-align: center;">C.E.O Holi Edam</p>
+<p style="text-align: center;">Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p></div>
+					</div>
+				</div> <!-- .et_pb_blurb_content -->
+			</div> <!-- .et_pb_blurb -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_5 et_section_regular">
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_10">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_21  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div id="contact-us" class="et_pb_module et_pb_text et_pb_text_5 et_pb_bg_layout_light  et_pb_text_align_left">
+				
+				
+				<div class="et_pb_text_inner"><h2 style="text-align: center;"><strong>Contact Us</strong></h2>
+<p style="text-align: center;">Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_11">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_22  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_6 et_pb_bg_layout_light  et_pb_text_align_left">
+				
+				
+				<div class="et_pb_text_inner"><h2 style="text-align: left;"><strong>Get In Touch</strong></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+<p>3520 Cumilla,<br /> Dhaka,Bangladesh.</p>
+<p><strong>kawserahmed40@protonmail.com<br /> ahmedkawser40@protonmail.com</strong></p>
+<p><strong><span>+88 01630307233,</span><br /> <span>+44 800-222-000</span></strong></p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_2 et_pb_column_23  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+			<div id="et_pb_contact_form_0" class="et_pb_module et_pb_contact_form_0 et_pb_contact_form_container clearfix" data-form_unique_num="0">
+				
+				
+				
+				<div class="et-pb-contact-message"></div>
+				
+				<div class="et_pb_contact">
+					<form class="et_pb_contact_form clearfix" method="post" action="https://dev-logic.pantheonsite.io/">
+						<p class="et_pb_contact_field et_pb_contact_field_0 et_pb_contact_field_half" data-id="name" data-type="input">
+				
+				
+				<label for="et_pb_contact_name_0" class="et_pb_contact_form_label">Name</label>
+				<input type="text" id="et_pb_contact_name_0" class="input" value="" name="et_pb_contact_name_0" data-required_mark="required" data-field_type="input" data-original_id="name" placeholder="Name">
+			</p><p class="et_pb_contact_field et_pb_contact_field_1 et_pb_contact_field_half et_pb_contact_field_last" data-id="email" data-type="email">
+				
+				
+				<label for="et_pb_contact_email_0" class="et_pb_contact_form_label">Email Address</label>
+				<input type="text" id="et_pb_contact_email_0" class="input" value="" name="et_pb_contact_email_0" data-required_mark="required" data-field_type="email" data-original_id="email" placeholder="Email Address">
+			</p><p class="et_pb_contact_field et_pb_contact_field_2 et_pb_contact_field_last" data-id="message" data-type="text">
+				
+				
+				<label for="et_pb_contact_message_0" class="et_pb_contact_form_label">Message</label>
+				<textarea name="et_pb_contact_message_0" id="et_pb_contact_message_0" class="et_pb_contact_message input" data-required_mark="required" data-field_type="text" data-original_id="message" placeholder="Message"></textarea>
+			</p>
+						<p class="et_pb_contact_field et_pb_contact_field_3 et_pb_contact_field_half" data-id="et_number" data-type="input">
+							<label for="et_pb_contact_et_number_0" class="et_pb_contact_form_label">Number</label>
+							<input type="text" id="et_pb_contact_et_number_0" class="input" value="" name="et_pb_contact_et_number_0" data-required_mark="required" data-field_type="input" data-original_id="et_number" placeholder="Number" tabindex="-1" autocomplete="disabled">
+						</p>
+						<input type="hidden" value="et_contact_proccess" name="et_pb_contactform_submit_0"/>
+						<div class="et_contact_bottom_container">
+							
+			<div class="et_pb_contact_right">
+				<p class="clearfix">
+					<span class="et_pb_contact_captcha_question">4 + 10</span> = <input type="text" size="2" class="input et_pb_contact_captcha" data-first_digit="4" data-second_digit="10" value="" name="et_pb_contact_captcha_0" data-required_mark="required" autocomplete="disabled">
+				</p>
+			</div> <!-- .et_pb_contact_right -->
+							<button type="submit" name="et_builder_submit_button" class="et_pb_contact_submit et_pb_button"3>Submit</button>
+						</div>
+						<input type="hidden" id="_wpnonce-et-pb-contact-form-submitted-0" name="_wpnonce-et-pb-contact-form-submitted-0" value="3f0316f8a5" /><input type="hidden" name="_wp_http_referer" value="/" />
+					</form>
+				</div> <!-- .et_pb_contact -->
+			</div> <!-- .et_pb_contact_form_container -->
+			
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section -->		</div><!-- .et_builder_inner_content -->
+	</div><!-- .et-l -->
+	
+			
+		</div><!-- #et-boc -->
+							</div> <!-- .entry-content -->
+
+				
+				</article> <!-- .et_pb_post -->
+
+			
+
+</div> <!-- #main-content -->
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+<div class="container">
+    <div id="footer-widgets" class="clearfix">
+		<div class="footer-widget"><div id="archives-2" class="fwidget et_pb_widget widget_archive"><h4 class="title">Archives</h4>
+			<ul>
+							</ul>
+
+			</div> <!-- end .fwidget --><div id="categories-2" class="fwidget et_pb_widget widget_categories"><h4 class="title">Categories</h4>
+			<ul>
+				<li class="cat-item-none">No categories</li>			</ul>
+
+			</div> <!-- end .fwidget --><div id="meta-2" class="fwidget et_pb_widget widget_meta"><h4 class="title">Meta</h4>
+		<ul>
+						<li><a href="https://dev-logic.pantheonsite.io/wp-login.php">Log in</a></li>
+			<li><a href="https://dev-logic.pantheonsite.io/feed/">Entries feed</a></li>
+			<li><a href="https://dev-logic.pantheonsite.io/comments/feed/">Comments feed</a></li>
+
+			<li><a href="https://wordpress.org/">WordPress.org</a></li>
+		</ul>
+
+		</div> <!-- end .fwidget --></div> <!-- end .footer-widget --><div class="footer-widget"></div> <!-- end .footer-widget --><div class="footer-widget"></div> <!-- end .footer-widget --><div class="footer-widget"></div> <!-- end .footer-widget -->    </div> <!-- #footer-widgets -->
+</div>    <!-- .container -->
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<ul class="et-social-icons">
+
+	<li class="et-social-icon et-social-facebook">
+		<a href="#" class="icon">
+			<span>Facebook</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-twitter">
+		<a href="#" class="icon">
+			<span>Twitter</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-google-plus">
+		<a href="#" class="icon">
+			<span>Google</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-instagram">
+		<a href="#" class="icon">
+			<span>Instagram</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-rss">
+		<a href="https://dev-logic.pantheonsite.io/feed/" class="icon">
+			<span>RSS</span>
+		</a>
+	</li>
+
+</ul><p id="footer-info">Designed by <a href="http://www.elegantthemes.com" title="Premium WordPress Themes">Elegant Themes</a> | Powered by <a href="http://www.wordpress.org">WordPress</a></p>					</div>	<!-- .container -->
+				</div>
+			</footer> <!-- #main-footer -->
+		</div> <!-- #et-main-area -->
+
+
+	</div> <!-- #page-container -->
+
+		<script type="text/javascript">
+				var et_animation_data = [{"class":"et_pb_row_5","style":"fade","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_counters_0","style":"fade","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"}];
+			</script>
+	<script type='text/javascript' id='divi-custom-script-js-extra'>
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_pb_custom = {"ajaxurl":"https:\/\/dev-logic.pantheonsite.io\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/dev-logic.pantheonsite.io\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/dev-logic.pantheonsite.io\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f0b70137c6","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"cac03b2771","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"22","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":""}; var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://dev-logic.pantheonsite.io/wp-content/themes/Divi/js/custom.min.js?ver=4.0.5' id='divi-custom-script-js'></script>
+<script type='text/javascript' src='https://dev-logic.pantheonsite.io/wp-content/themes/Divi/core/admin/js/common.js?ver=4.0.5' id='et-core-common-js'></script>
+<script type='text/javascript' src='https://dev-logic.pantheonsite.io/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+</body>
+</html>
